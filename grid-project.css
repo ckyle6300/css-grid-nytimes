@@ -42,8 +42,55 @@ hr {
 }
 
 /* Main Grid Styles */
+.grid__container {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header"
+  "main sidebar"
+  "other-news othernews"
+  "smarter-living smarter-living"
+  "features features"
+  "discovery discovery"
+  "most-popular most-popular"
+  "news news"
+  "footer footer";
+}
 
+.grid__section-1 {
+  grid-area: header;
+}
 
+.grid__section-2 {
+  grid-area: main;
+}
+
+.grid__section-3 {
+  grid-area: sidebar;
+}
+
+.grid__section-4 {
+  grid-area: other-news;
+}
+.grid__section-5 {
+  grid-area: smarter-living;
+}
+.grid__section-6 {
+  grid-area: features;
+}
+.grid__section-7 {
+  grid-area: discovery;
+}
+.grid__section-8 {
+  grid-area: most-popular;
+}
+.grid__section-9 {
+  grid-area: news;
+}
+.grid__section-10 {
+  grid-area: footer;
+}
 
 /* Grid Section 1 - Flex Styles */
 
